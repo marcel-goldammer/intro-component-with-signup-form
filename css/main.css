@@ -70,22 +70,41 @@ footer a:hover {
   text-decoration: none;
 }
 
+.form-control {
+  margin-bottom: 1em;
+}
+
 input,
 button {
   display: block;
-  padding: 1em;
+  padding: 1em 2em;
   width: 100%;
-  margin-bottom: 1em;
+  border-radius: 5px;
 }
 
 input {
   font-weight: 600;
   color: #3e3c49;
+  border: 1px solid #b9b6d3;
+}
+
+input.error {
+  border: 1px solid #ff7a7a;
+  color: #ff7a7a;
+  background: url("../../images/icon-error.svg") no-repeat;
+  background-position: calc(100% - 2em);
+  position: relative;
+}
+
+input.error + label {
+  font-size: 0.8em;
+  display: block;
+  text-align: right;
+  color: #ff7a7a;
 }
 
 button {
   border: 0;
-  border-radius: 5px;
   -webkit-box-shadow: 0 3px 1px 0 #2eb279;
           box-shadow: 0 3px 1px 0 #2eb279;
   background-color: #38cc8c;

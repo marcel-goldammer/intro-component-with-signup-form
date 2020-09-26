@@ -1,19 +1,38 @@
+.form-control {
+  margin-bottom: 1em;
+}
+
 input,
 button {
   display: block;
-  padding: 1em;
+  padding: 1em 2em;
   width: 100%;
-  margin-bottom: 1em;
+  border-radius: 5px;
 }
 
 input {
   font-weight: 600;
   color: $color-dark-blue;
+  border: 1px solid $color-grayish-blue;
+
+  &.error {
+    border: 1px solid $color-red;
+    color: $color-red;
+    background: url("../../images/icon-error.svg") no-repeat;
+    background-position: calc(100% - 2em);
+    position: relative;
+
+    & + label {
+      font-size: 0.8em;
+      display: block;
+      text-align: right;
+      color: $color-red;
+    }
+  }
 }
 
 button {
   border: 0;
-  border-radius: 5px;
   box-shadow: 0 3px 1px 0 darken($color-green, 7%);
   background-color: $color-green;
   color: white;
