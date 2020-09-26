@@ -1,0 +1,34 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "intro"
+    "signup"
+    "footer";
+  row-gap: 2em;
+  column-gap: 2em;
+  height: 100vh;
+}
+
+.intro {
+  grid-area: intro;
+}
+
+.signup {
+  grid-area: signup;
+}
+
+footer {
+  grid-area: footer;
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    grid-template-areas:
+      "intro signup"
+      "footer footer";
+    grid-template-columns: minmax(300px, 500px) minmax(300px, 500px);
+    grid-template-rows: 1fr 20px;
+    align-items: center;
+    justify-content: center;
+  }
+}

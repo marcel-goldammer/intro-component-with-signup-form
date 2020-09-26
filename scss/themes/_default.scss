@@ -1,0 +1,53 @@
+body {
+  background: url("../../images/bg-intro-mobile.png") $color-red;
+  color: $color-white;
+  padding: 1em;
+}
+
+.intro {
+  text-align: center;
+  &__header {
+    display: inline-block;
+    text-align: left;
+    padding: 1em;
+  }
+}
+
+.try {
+  background-color: $color-blue;
+
+  span {
+    font-weight: 600;
+  }
+}
+
+.signup {
+  background-color: $color-white;
+  color: $color-grayish-blue;
+
+  &__terms {
+    font-size: 0.85em;
+
+    a {
+      text-decoration: none;
+      color: $color-red;
+      font-weight: 600;
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .intro {
+    &__header {
+      display: block;
+      font-size: 3em;
+      line-height: 1;
+      padding-left: 0;
+      padding-bottom: 0.5em;
+    }
+
+    &__content {
+      text-align: left;
+    }
+  }
+}

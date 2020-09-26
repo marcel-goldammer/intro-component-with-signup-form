@@ -1,0 +1,11 @@
+footer {
+  text-align: center;
+
+  a {
+    color: $color-dark-blue;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

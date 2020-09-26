@@ -1,0 +1,22 @@
+input,
+button {
+  display: block;
+  padding: 1em;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+input {
+  font-weight: 600;
+  color: $color-dark-blue;
+}
+
+button {
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 3px 1px 0 darken($color-green, 7%);
+  background-color: $color-green;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}

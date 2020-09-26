@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "intro" "signup" "footer";
+  row-gap: 2em;
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
+  height: 100vh;
+}
+
+.intro {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: intro;
+}
+
+.signup {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: signup;
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+        grid-template-areas: "intro signup" "footer footer";
+    -ms-grid-columns: minmax(300px, 500px) minmax(300px, 500px);
+        grid-template-columns: minmax(300px, 500px) minmax(300px, 500px);
+    -ms-grid-rows: 1fr 20px;
+        grid-template-rows: 1fr 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: #3e3c49;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+input,
+button {
+  display: block;
+  padding: 1em;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+input {
+  font-weight: 600;
+  color: #3e3c49;
+}
+
+button {
+  border: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 1px 0 #2eb279;
+          box-shadow: 0 3px 1px 0 #2eb279;
+  background-color: #38cc8c;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.box {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 1px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 1px 0 rgba(0, 0, 0, 0.15);
+  margin-bottom: 1em;
+  padding: 1.5em;
+  text-align: center;
+}
+
+body {
+  background: url("../../images/bg-intro-mobile.png") #ff7a7a;
+  color: white;
+  padding: 1em;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro__header {
+  display: inline-block;
+  text-align: left;
+  padding: 1em;
+}
+
+.try {
+  background-color: #6055a5;
+}
+
+.try span {
+  font-weight: 600;
+}
+
+.signup {
+  background-color: white;
+  color: #b9b6d3;
+}
+
+.signup__terms {
+  font-size: 0.85em;
+}
+
+.signup__terms a {
+  text-decoration: none;
+  color: #ff7a7a;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 800px) {
+  .intro__header {
+    display: block;
+    font-size: 3em;
+    line-height: 1;
+    padding-left: 0;
+    padding-bottom: 0.5em;
+  }
+  .intro__content {
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=main.css.map */
